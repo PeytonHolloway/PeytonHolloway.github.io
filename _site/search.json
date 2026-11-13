@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hi, My name is Peyton Holloway. I love sports."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Matt Waite's Collection of Miscellany",
+    "section": "",
+    "text": "---\ntitle: \"CHANGE THIS TO BE THE TITLE OF YOUR POST\"\nauthor: \"THIS IS YOUR NAME\"\ndate: '2022-XX-XX'\ncategories: [lowercaseword, lowercaseword, lowercaseword]\nimage: \"image.png\"\nformat: \n  html:\n    code-fold: true\n---"
+  }
+]

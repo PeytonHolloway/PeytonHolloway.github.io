@@ -1,0 +1,39 @@
+```{r}
+library(tidyverse)
+```
+```{r}
+
+library(nascaR.data)
+
+# Load NASCAR Cup Series results
+nascar <- load_series("cup")
+
+# View the dataset
+View(nascar)
+
+```
+```{r}
+
+# Select 2025 race results
+nascar_2025 <- subset(nascar, Season == 2025)
+
+# Keep variables relevant to your story
+nascar_story <- nascar_2025[, c(
+  "Season", "Race", "Track",
+  "Driver", "Start", "Finish"
+)]
+
+# View results
+View(nascar_story)
+
+```
+```{r}
+
+write.csv(
+  nascar_story,
+  "nascar_2025_results.csv",
+  row.names = FALSE
+)
+
+```
+
